@@ -1,0 +1,28 @@
+/* this is the css-integration exercise */
+.card-wrapper {
+    display: grid;
+    grid-area: card-wrapper;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 100%;
+    grid-template-areas:
+        "card1"
+        "card2"
+        "card3"
+        "card4";
+    font-size: 12px;
+    font-family: 'Inconsolata', monospace;
+    background-color: #fff;
+    object-fit: cover;
+}
+.img {
+    max-height: 150px;
+    max-width: 150px;
+    text-align: center;
+    object-fit: cover;
+}
+.card-text {
+    text-align: left;
+}
+h2 {
+    color: green;
+}
