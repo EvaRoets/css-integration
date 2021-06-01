@@ -1,28 +1,41 @@
-/* this is the css-integration exercise */
-.card-wrapper {
-    display: grid;
-    grid-area: card-wrapper;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 100%;
-    grid-template-areas:
-        "card1"
-        "card2"
-        "card3"
-        "card4";
-    font-size: 12px;
-    font-family: 'Inconsolata', monospace;
-    background-color: #fff;
-    object-fit: cover;
+@font-face{
+  font-family: 'Inconsolata', monospace;
+  src: url(Inconsolata-VariableFont_wdth,wght.ttf);
 }
-.img {
-    max-height: 150px;
-    max-width: 150px;
-    text-align: center;
-    object-fit: cover;
+
+.container {
+  display: grid;
+  grid-template-columns: repeat 100%;
+  grid-template-rows: 100%;
 }
-.card-text {
-    text-align: left;
+
+@media only screen and (min-width: 650px) and (max-width: 950px) {
+  .container {
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 50% 50%;
+  }
 }
-h2 {
-    color: green;
+@media only screen and (min-width: 0px) and (max-width: 649px) {
+  .container {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4, 25%);
+  }
+}
+.card{
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 150px minmax(40px, auto) auto;
+}
+.img{
+  max-height: 150px;
+  max-width: 150px;
+  height: auto;
+  width: auto;
+  justify-self: center;
+  text-align: center;
+}
+
+.h2{
+  color: #75BA8C;
+  justify-self: center;
 }
