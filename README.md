@@ -1,10 +1,14 @@
 # Drill: Learn CSS Integration
+![grunt](https://user-images.githubusercontent.com/84382812/136962745-7b432187-3350-4b9f-ae89-d06212dfc3f6.PNG)
+
+![test 2](https://user-images.githubusercontent.com/84382812/136962766-6ab2f537-7b9c-4a3b-8369-844bdb3344c1.PNG)
+
+
 ## Objectives
-- build a couple of full integrations  
+- build two full integrations 
 
 ## Specifications
-For each interface :
-- Create a standard html page based on this template:
+- Create a standard html page based on this template for each interface:
 
 ```html
 <!DOCTYPE html>
@@ -19,10 +23,10 @@ For each interface :
   </body>
 </html>
 ```
-- Create a standard `style.css` stylesheet and link it to the html page
+- Create a standard `style.css` stylesheet and link it to the HTML page
 - Add the relevant HTML and CSS code so that the end result looks as similar as possible to the provided _high-fidelity mockup_ images.
 
-### Must-have features:
+### Must-haves
 #### Git
 
 - I have created the repository
